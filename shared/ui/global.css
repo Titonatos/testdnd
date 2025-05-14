@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+  background: #f7f7f7;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #3C3F4F;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 24px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}

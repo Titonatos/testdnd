@@ -5,12 +5,6 @@
   grid-auto-rows: min-content;
 }
 
-.grid-container {
-  width: 60%;
-  border-radius: 4px;
-  background-color: #3C3F4F;
-}
-
 .grid-header {
   position: flex;
   justify-content: space-between;
@@ -33,35 +27,10 @@
   gap: 10px;
 }
 
-.grid-header-buttons button {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border: none;
-  background: #fff;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.grid-header-buttons button:hover {
-  background: #a5a5a5;
-}
-
-.grid-header-buttons button img {
-  display: block;
-  margin: 0 auto;
-  width: 20px;
-  height: 20px;
-}
-
 .grid-row {
   display: grid;
   gap: 10px;
-  min-height: 30px;
+  height: 52px;
   border-radius: 4px;
   transition: all 0.2s ease;
   grid-auto-flow: column;
@@ -90,6 +59,9 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .grid-item.dragging {
@@ -101,11 +73,11 @@
   border: 2px dashed #232532;
   background-color: rgba(76, 175, 80, 0.1);
   min-width: 0;
-  min-height: 30px;
+  min-height: 52px;
 }
 
 .row-placeholder {
-  height: 30px;
+  height: 52px;
   background-color: rgba(33, 150, 243, 0.1);
   border: 2px dashed #2196F3;
   margin: 5px 0;
