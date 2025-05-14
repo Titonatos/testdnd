@@ -4,7 +4,7 @@ export function renderField(field) {
     fieldElement.setAttribute('data-id', field.id);
     
     const burgerIcon = document.createElement('img');
-    burgerIcon.src = '/shared/icons/burgerMenu.svg';
+    burgerIcon.src = './shared/icons/burgerMenu.svg';
     burgerIcon.alt = 'burgerIcon';
     burgerIcon.style.marginRight = '8px';
     burgerIcon.style.width = '20px';
