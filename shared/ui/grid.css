@@ -1,0 +1,112 @@
+.grid {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-auto-rows: min-content;
+}
+
+.grid-container {
+  width: 60%;
+  border-radius: 4px;
+  background-color: #3C3F4F;
+}
+
+.grid-header {
+  position: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-header-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-header-buttons button {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.grid-header-buttons button:hover {
+  background: #a5a5a5;
+}
+
+.grid-header-buttons button img {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+}
+
+.grid-row {
+  display: grid;
+  gap: 10px;
+  min-height: 30px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.grid-row.empty-row {
+  background-color: #e9e9e9;
+  border: 2px dashed #aaa;
+}
+
+.grid-row.drop-zone {
+  background-color: #e3f2fd;
+  border: 2px dashed #2196F3;
+}
+
+.grid-item {
+  background-color: #232532;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: move;
+  flex-grow: 1;
+  transition: all 0.2s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.grid-item.dragging {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.grid-placeholder {
+  border: 2px dashed #232532;
+  background-color: rgba(76, 175, 80, 0.1);
+  min-width: 0;
+  min-height: 30px;
+}
+
+.row-placeholder {
+  height: 30px;
+  background-color: rgba(33, 150, 243, 0.1);
+  border: 2px dashed #2196F3;
+  margin: 5px 0;
+} 
